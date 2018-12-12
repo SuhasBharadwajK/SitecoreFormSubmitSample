@@ -1,0 +1,29 @@
+﻿@using Sitecore.Mvc
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        @Html.Sitecore().Placeholder("header")
+    </header>
+    <div>
+        @Html.Sitecore().Placeholder("body")
+    </div>
+    <footer>
+        @Html.Sitecore().Placeholder("footer")
+    </footer>
+</body>
+</html>

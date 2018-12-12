@@ -1,0 +1,20 @@
+﻿@model SitecoreLogin.Feature.Login.Models.LoginViewModel
+
+<div>
+    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post,new))
+    {
+        @Html.Sitecore().FormHandler("Login", "LoginUser")
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+
+        @Html.LabelFor(x => x.Password)
+        @Html.PasswordFor(x => x.Password)
+
+        <input type="submit" />
+    }
+
+    @if (Model.IsLoginSuccess)
+    {
+        <h1>Login Was Successful!</h1>
+    }
+</div>

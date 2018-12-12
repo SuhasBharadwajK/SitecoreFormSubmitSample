@@ -3,9 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{0A386B1D-87CF-4A16-B415-75758DF3B82E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8502454A-C6EE-4CD8-A0ED-3F728218E541}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{C33466B3-412D-4147-AAB6-DBACBB4D1FD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{72C46C96-5A4E-4784-AB8F-C15CD9A524E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreLogin.Project.Website", "src\Project\Website\code\SitecoreLogin.Project.Website.csproj", "{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Login", "Login", "{CFD78077-8E2B-4998-8E18-EA9477ACD08D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreLogin.Feature.Login", "src\Feature\Login\code\SitecoreLogin.Feature.Login.csproj", "{35EB6FE9-FC43-4881-9139-39FE67147F0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORM", "ORM", "{15363300-B369-4EE2-882D-5D7DA7428191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreLogin.Foundation.ORM", "src\Foundation\ORM\code\SitecoreLogin.Foundation.ORM.csproj", "{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EB6FE9-FC43-4881-9139-39FE67147F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EB6FE9-FC43-4881-9139-39FE67147F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EB6FE9-FC43-4881-9139-39FE67147F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EB6FE9-FC43-4881-9139-39FE67147F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72C46C96-5A4E-4784-AB8F-C15CD9A524E6} = {C33466B3-412D-4147-AAB6-DBACBB4D1FD9}
+		{B9BCEE86-88F4-40E1-9F9F-CFD7DFF294A2} = {72C46C96-5A4E-4784-AB8F-C15CD9A524E6}
+		{CFD78077-8E2B-4998-8E18-EA9477ACD08D} = {0A386B1D-87CF-4A16-B415-75758DF3B82E}
+		{35EB6FE9-FC43-4881-9139-39FE67147F0B} = {CFD78077-8E2B-4998-8E18-EA9477ACD08D}
+		{15363300-B369-4EE2-882D-5D7DA7428191} = {8502454A-C6EE-4CD8-A0ED-3F728218E541}
+		{04CE475E-2BD6-4370-BCDD-44ECF10D2AE1} = {15363300-B369-4EE2-882D-5D7DA7428191}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {136350A4-70B8-4E64-AB52-2D4722953C74}
